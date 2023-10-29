@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+    <style>
+        .box {
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            display: none;
+        }
+
+        @media(max-width: 400px) {
+            #box1 {
+                display: block;
+                background-color: rgb(21, 255, 0);
+
+            }
+        }
+
+        @media (min-width: 400px) and (max-width: 800px) {
+            #box2 {
+                display: block;
+                background-color: rgb(255, 238, 0);
+            }
+        }
+        @media (min-width: 800px) and (max-width: 1200px) {
+            #box3 {
+                display: block;
+                background-color: rgb(0, 255, 247);
+            }
+        }
+        @media (min-width: 1200px) {
+            #box4 {
+                display: block;
+                background-color: rgb(255, 0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">I am smart phone.</div>
+    <div class="box" id="box2">I am tablet.</div>
+    <div class="box" id="box3">I am a computer.</div>
+    <div class="box" id="box4">I am wide screan computer.</div>
+</body>
+
+</html>

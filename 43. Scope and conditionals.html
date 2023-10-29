@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditionals</title>
+    <style>
+        li {
+            background-color: aqua;
+            border: 2px solid red;
+            color: blue;
+            margin: 25px 25px;
+            padding: 5px 5px;
+            height: 500px;
+            width: 500px;
+            text-align: center;
+            font-size: 50px;
+            display: block;
+            width: 500px;
+            margin: auto auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // This is var string. 
+        var string1 = 'This is a string1.'
+        console.log(string1);
+
+        // This is let string.
+        let a = 'aman gupta'
+        console.log(a)
+
+        // This is let string but It is eligible in only block.
+        {
+            let a = 'aman'
+            console.log(a)
+        }
+        // const can not be change.
+        const b = 'gupta'
+        const pa = 'aman gupta'
+        console.log(b)
+        console.log(pa)
+
+        // If, else function.
+        let age = (18)
+        if (age > 18) {
+            console.log("you can drive car.");
+        }
+        else if (age == 70) {
+            console.log("you can not drive car. Your age is over now for driving motorcycle or car.")
+        }
+        else 
+            console.log("No, you can not drive your car.");
+
+        // Switch condition.
+        
+        //  Switch condition me hota ye hai ki jaise aap dekhna chahte hai ki kitne cups hai to
+        //   isko swicht ki madad se kiya jaa sakta hai maan lo 41 cups hai to aapko karna kya hai
+        //    kuchh xases run karna hai aur jo case match hoga vo print ho jayega aur aapko pata 
+        //    chal jayega ki kitne cups hai jaise kiche diya gya hai ek exapmle.
+
+        const cups = 41;
+        switch (cups) {
+            case 45:
+                console.log("The value of cups is 45.")
+                break;
+            case 45:
+                console.log("The value of cups is 41.")
+                break;
+            case 42:
+                console.log("The value of cups is 42.")
+                break;
+            case 43:
+                console.log("The value of cups is. 4")
+            case 4:
+                console.log("No value matches of cups.")
+                break;
+            case 10:
+                console.log("The value of cups is 10.")
+                break;
+        }
+        const weakname = "sunday, monday, tuesday, wednesday, thursday, friday, saturday"
+        switch (weakname) {
+            case "sunday":
+                console.log("Today is monday.")
+                break;
+
+            default:
+                console.log("Today is not a day.")
+                break;
+        }
+    </script>
+</body>
+
+</html>

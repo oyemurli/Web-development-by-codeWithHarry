@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property transformation in css</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .container{
+            height: 900px;
+            display: flex;
+            background-color: greenyellow;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            /* display: flex; */
+            width: 400px;
+            height: 400px;
+            background-color: goldenrod;
+            border: 2px solid blue;
+            /* align-items: center; */
+            /* justify-content: center; */
+            /* transition: all 2s ease-in-out; */
+            transform: skew(20deg);
+
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: scale(2); */
+            /* transform: translateX(2223px); */
+            /* transform: translatey(223px); */
+            /* transform: translate(123px 123px); */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, expedita?</li>
+        </div>
+    </div>
+</body>
+</html>

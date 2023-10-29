@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert, promt and confirm</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: greenyellow;
+            text-align: center;
+            border: 5px solid red;
+            background-color: black;
+            font-size: 50px;
+            display: inline;
+            margin-left: 540px;
+
+        }
+
+        p {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>(: Best free courses of 2023 :)</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto, iste nemo reprehenderit aut
+                enim, minus ratione adipisci iusto iure similique beatae debitis laudantium dolore animi eos accusantium
+                alias. Eaque rem ea, voluptatimpedit reici</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam laboriosam modi quis aperiam dolorem
+                pariatur facere quos quaerat explicabo itaque assumenda ad, distinctio impedit sit possimus vitae
+                aliquid eius asperiores accusamus culpa natus sapiente? Repellat inventore similique quaerat dolore
+                reprehenderit beatae odio, placeat molestias impedit quisquam nostrum aut ullam esse maiores. Dolor
+                omnis commodi, natus quasi adipisci molestiae? Soluta, eius velit maiores unde qui nulla. Corporis,
+                quis. Minima quod maiores placeat atque, perspiciatis fuga quia asperiores. Vitae numquam at illum
+                molestiae, commodi eum officia incidunt? Ea in officiis amet doloribus eveniet sint non incidunt
+                quibusdam suscipit, voluptates possimus eligendi voluptate!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, veritatis consequatur temporibus nihil
+                provident tenetur excepturi est optio earum unde sed modi molestias praesentium quia possimus expedita
+                reprehenderit fugit. Itaque perferendis dolore, ex quaerat aperiam blanditiis porro ipsum quisquam quasi
+                nobis eaque laborum esse ea velit recusandae eius tempora optio voluptatum. Ea, quae! Dolorem
+                cupiditate,
+                enim accusantium nesciunt laudantium aliquam ullam dolores, rerum perferendis, voluptatem impedit
+                doloremque
+                corrupti fugit nam deleniti earum quo dolor fuga vitae? Non, perspiciatis consequuntur. Facilis dolorem
+                a
+                laboriosam deserunt culpa incidunt recusandae delectus ipsam sunt labore. Ducimus ex in inventore id
+                recusandae aut amet nesciunt!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore minus at vel aperiam nesciunt omnis
+                unde,
+                aut ut ab atque recusandae nemo nulla nihil praesentium alias quia corrupti adipisci veritatis eligendi
+                dolorum sunt molestiae quo explicabo? Impedit, et modi! Non asperiores, minus perferendis nihil itaque
+                maxime similique tempore voluptatibus repellat cupiditate laudantium aperiam! Quos impedit eos alias
+                sequi
+                fugit dicta debitis voluptatum libero veniam temporibus rem in assumenda quis voluptas, ad quae
+                laboriosam.
+                Reiciendis nisi inventore commodi hic voluptas deserunt, excepturi facere in accusamus numquam nobis
+                consequatur saepe? Natus eum nam placeat doloribus, earum blanditiis aliquid nisi fuga beatae! Atque.
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    // yaha pe ham alert ka use kar sakte hai ki ki user ko koi notice dikhane ke liye ya fir koi information dene ke liye 
+    alert("Yah web site bacho ke liye banayi gyi hai kripya aap isme enter na karo aurkarte hai bhi to aap apne jimmedaar khudd honge.");
+
+    // yaha pe ham prompt ka use karke user se kuchh pooch sakte hai ki tum kya sikhna chahte ho ya kitne paise chahiye ya kitna kamte ho ho anything.
+    let name = prompt("What Will you want to learn?");
+    console.log(name);
+
+    // yaha pe ham confirm ka use karke user se pooch sakte hai ki kya aap ye post jo delete kar rahe ho isse delete kar du ya nhi agar user bolta hai karne ko delete to kar dena hai 
+    // iska matlab ye ki user jo kar raha hai usko dobara se confirm karo ki kya sach me kaam karna hai ye 
+    // aur iss kaam ko if alse se karna hai
+    let deletepost = confirm("Do you want to delete this post")
+
+    if (deletepost) {
+        console.log("Your post has been deleted successfully.")
+    }
+    else
+        console.log("your post has not been deleted.")
+
+    console.log(deletepost);
+</script>
+
+</html>

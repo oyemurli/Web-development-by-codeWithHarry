@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and background</title>
+    <style>
+        #firstpara {
+            color: greenyellow;
+            background-color: black;
+            height: 100px;
+            width: 470px;
+            border-width: 5px;
+            border-color: rgb(255, 0, 0);
+            border-style: solid;
+            border-radius: 20px;
+        }
+
+        #secondpara {
+            color: greenyellow;
+            font-size: 1.5em;
+            background-color: blue;
+            height: 100px;
+            width: 470px;
+            border: 5px solid rgb(255, 0, 0);
+            /* border-width: 5px;
+            border-color: rgb(255, 0, 0);
+            border-style: solid; */
+            border-radius: 13px;
+        }
+
+        #thirdpara {
+            color: rgb(80, 123, 15);
+            font-size: 1.5em;
+            background-color: rgb(33, 171, 171);
+            height: 100px;
+            width: 470px;
+            border: 5px solid rgb(255, 0, 0);
+            border-radius: 13px;
+            border-top: 5px solid rgb(90, 34, 34);
+            border-right: 5px solid rgb(255, 0, 247);
+            border-bottom: 5px solid rgb(255, 0, 0);
+            border-left: 5px solid rgb(0, 255, 47);
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+
+        #fourthpara {
+            height: 100px;
+            width: 470px;
+            border: 5px solid royalblue;
+            background-repeat: no-repeat;
+            /*Repeat-x and repeat-y will make it repeat on x and y axis.*/
+            background-position: center right;
+            /* background-position: center left;
+            background-position: center top;
+            background-position: center bottom;
+            background-position: center center;
+            background-position: 100px   120px; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="firstpara">This is heading</h1>
+    <p id="secondpara">This is a paragraph</p>
+    <p id="thirdpara">This is an another paragraph</p>
+    <p id="fourthpara">This is yet another paragraph</p>
+</body>
+
+</html>

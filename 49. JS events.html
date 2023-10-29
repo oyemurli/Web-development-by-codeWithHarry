@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js events</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: rgb(17, 255, 0);
+            border: 2px solid black;
+
+        }
+
+        .para-container {
+            border: 2px solid red;
+            display: block;
+            width: 1880px;
+            height: 227px;
+            margin: 0px auto;
+            padding: 10px;
+        }
+
+        p {
+            text-align: center;
+            background-color: aqua;
+            border: 2px solid black;
+            padding: 20px 20px;
+
+        }
+
+        .hide-button {
+            background-color: rgb(47, 0, 255);
+            border: 2px solid black;
+            color: white;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: block;
+            width: 100px;
+            margin: auto auto;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- browser events:
+        click
+        contextmenu
+        mouseover/mouseout
+        mousedown/mouseup
+        mousemove
+
+        submit
+        focus
+        
+        DOMcontentloaded
+
+        transitioned -->
+
+        <h1 id="heading">Jyaada bura lage meri ye website to band karke hat jao tumhare liye hai hi nhi ye</h1>
+        <div class="para-container">
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, hic ducimus. Excepturi fuga
+                fugit
+                voluptates facere, repudiandae laborum tempore temporibus nihil consequatur? Ab debitis consequuntur hic
+                obcaecati. Tempore asperiores excepturi aperiam repellat deleniti nisi ducimus eligendi amet, velit
+                libero
+                voluptas! Accusamus facilis praesentium debitis esse assumenda et dicta veritatis! Dicta minima maxime
+                aut
+                pariatur atque voluptas nemo exercitationem nostrum quas nisi, eos deleniti earum asperiores maiores,
+                recusandae officia optio deserunt magnam dolorem laboriosam nam eius. Debitis dolore, nisi iusto aperiam
+                ipsa impedit eos aliquam adipisci provident aliquid alias laudantium natus possimus, tempore accusantium
+                ullam animi illum corrupti unde odit repellat! Sapiente in soluta cupiditate voluptatum accusamus quos
+                vitae
+                maiores veniam molestias. Praesentium reprehenderit, culpa amet expedita voluptas, doloribus est nostrum
+                minima sunt ipsum excepturi! Corrupti unde quo officiis ex quae consequuntur qui placeat facere
+                molestiae
+                animi autem, possimus eveniet amet dolore sapiente neque quas! Animi explicabo iusto voluptatem
+                inventore
+                itaque, eius autem accusamus, aut soluta molestias maiores delectus, deleniti libero unde voluptatibus.
+                Excepturi perferendis, dicta assumenda repellendus minima officia fuga, quos corporis ab et aperiam!
+                Vitae
+                eaque repellat rerum soluta molestiae in ipsam sapiente sit inventore a reprehenderit, fuga voluptatibus
+                sequi delectus deleniti modi cum consectetur placeat natus recusandae fugit. <br>
+            </p>
+        </div>
+        <button class="hide-button" id="btn" onclick="hide()">Show/Hide</button>
+    </div>
+    <div id="paragragh"
+        style="padding: 25px; margin-top: 10px; background-color: aqua; border: 2px solid black; text-align: center;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, autem laboriosam? Id neque temporibus iste
+        tempore ex ipsum placeat eveniet unde quaerat dolorem laborum expedita minima, aspernatur deserunt commodi
+        perspiciatis facilis omnis eius iure vel tenetur! Earum ducimus sequi delectus sunt dicta ea cupiditate suscipit
+        provident dolorum, possimus odio explicabo.</div>
+
+    <button id="batan" style="            
+        background-color: rgb(47, 0, 255);
+        border: 2px solid black;
+        color: white;
+        padding: 8px;
+        border-radius: 20px;
+        font-weight: bold;
+        display: block;
+        width: 120px;
+        margin: 0PX auto;
+        cursor: pointer;
+        margin-top: 10px;" onclick="color()">Change/Color </button>
+    <script>
+        // let para = document.getElementById('para'); 
+        // para.addEventListener('mouseover', function run() {
+        //     console.log('Mouse inside');
+        // });
+
+        // para.addEventListener('mouseout', function run() {
+        //     console.log('Mouse outside');
+        // });
+
+        // para.addEventListener('mousedown', function run() {
+        //     console.log('Mouse down');
+        // });
+
+        // heading.addEventListener('mousemove', function run(){
+        //     console.log('Mouse move');
+        // });
+
+        function hide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para')
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+
+            }
+        }
+
+        function color() {
+            let batan = document.getElementById('batan');
+            let paragragh = document.getElementById('paragragh')
+            if (paragragh.style.backgroundColor != 'black') {
+                paragragh.style.backgroundColor = 'black';
+                paragragh.style.color = 'white';
+                paragragh.style.textAlign = 'left';
+                // paragragh.style.backgroundColor = 'black';
+                // paragragh.style.backgroundColor = 'black';
+                // paragragh.style.backgroundColor = 'black';
+                // paragragh.style.backgroundColor = 'black';
+            }
+            else if (paragragh.style.backgroundColor = 'black') {
+
+                paragragh.style.backgroundColor = 'aqua';
+                paragragh.style.color = 'black';
+                paragragh.style.textAlign = 'center';
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

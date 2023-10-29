@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut and ClearTimeOut</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Time now is <span id="showtime"></span>
+    </div>
+    <script>
+        console.log("This is settime interval video ettc.")
+        // to hamne ek function baya joki good morning bolta hai aur hamne timeout laga diya aur usse function ka name bata diya ki isse run kar do aur uske baad bata diya ki kitni der baad run karna hai aur utni der baad vo use run kar dega.
+        function greet(name, byetext) {
+            console.log("Hello good morning" + " " + name + " " + byetext);
+        }
+        // time out ko hamne function ka name diya hai joki run karna hai aur time diya hua hai k9i itni der baad run  kar do
+        let timeout = setTimeout(greet, 5000, "Aman", "good bye");
+        // setTimeout(greet(), 5000,"Aman","good bye"); do not call a function in setTimeout only give him name
+
+        console.log(timeout);
+        // yaha pe clear time out ko ek variable diya gya hai joki kuchh work karta hai to hamne cleartime out ko kah diya ki ye jaise hi kuchh karta hai isse rok dena tumto ye rokne ka kaam karta hai.
+        // clearTimeout(timeout)
+
+        // yaha pe set interval kya karta hai ki hamne isse kuchh function name diya hai aur ye usse baar baar run kar deta hai aur isme bataya bhi jaa skata hai ki kitni der baad fir se chalana hai
+        intervalId = setInterval(greet, 1000, "bhai", "bahen")
+        // ye clear interval rokne ka kaam karta hai.
+        clearInterval(intervalId)
+
+        // yaha pe ek function banaya gya hai joki time dikhata hai matlab watch kaha sakte hai to isme pahle hamne time = new date() karke bulitin hota hai usse laya aur run kar diya to ye kya karta hai ki jab run karoge to current time ko show kar dega to hamne kya kiya ki setinterval ka use  karke har ek second me run kar dete hai to jaise hi ek sec hota hai setinterval isse dobara run kar deta hai to watch me har ek sec me time change hota jaata hai.
+        function datetime() {
+            time = new Date()
+            console.log(time)
+            // yaha pe hamne apni body me se kuchh uthaya aur .innerHTML ka use karke function ko usme bhi run kar diya.
+            document.getElementById('showtime').innerHTML = time;
+        }
+        setInterval(datetime, 1000);
+    </script>
+</body>
+
+</html>

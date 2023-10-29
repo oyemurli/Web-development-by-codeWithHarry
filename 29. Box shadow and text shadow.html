@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        #card1 {
+            /* Up shadow */
+            padding: 23px 12px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 23px 12px;
+            background-color: aqua;
+            box-shadow: -10px -10px black;
+        }
+
+        #card2 {
+            /* Down and blur shadow */
+            padding: 23px 12px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 23px 12px;
+            background-color: aqua;
+            /* box-shadow: height, width, blur, speard, color; */
+            box-shadow: 10px 10px 5px black;
+        }
+
+        #card3 {
+            /* Down And Speard shadow */
+            padding: 23px 12px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 23px 12px;
+            background-color: aqua;
+            box-shadow: 10px 10px 0px 5px black;
+        }
+
+        #card4 {
+            /* rgba= red, green, blue, alfa */
+            padding: 23px 12px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 23px 12px;
+            background-color: aqua;
+            box-shadow: 10px -10px 0px 5px rgb(41, 41, 218, 0.5);
+        }
+
+        #card5 {
+            /*Inset*/
+            padding: 23px 12px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 23px 12px;
+            background-color: aqua;
+            box-shadow: inset 10px 10px 0px 5px black;
+        }
+
+        #card6 {
+            /* Multiple shadow */
+            padding: 23px 12px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 23px 12px;
+            background-color: aqua;
+            box-shadow: inset 10px 10px 0px 5px black, 10px 10px 5px red;
+        }
+        #h1{
+            text-shadow: 5px 5px  30px red;
+        }
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1 id="h1">This is dropshipping course.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum incidunt fugit veritatis doloremque.
+                Quae enim corrupti consectetur illum impedit magni! Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Non exercitationem nostrum molestiae harum accusamus labore illum ab, praesentium similique
+                voluptas.</p>
+        </div>
+        <div class="card" id="card2">
+            <h1 id="h2">This is Digital marketing course.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore laborum quos odit esse cum
+                commodi quo fugit ratione sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti error
+                est culpa illo vero sed facere molestias assumenda aspernatur iste.</p>
+        </div>
+        <div class="card" id="card3">
+            <h1 id="h3">This is Web delopment course.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate rem aperiam repellendus recusandae
+                debitis maiores fugit labore adipisci? Animi, doloremque. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Odit consequuntur dolor deserunt fugit nisi, delectus possimus pariatur quas harum!
+                Cupiditate!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card" id="card4">
+            <h1 id="h4">This is Ml course.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum incidunt fugit veritatis
+                doloremque. Quae enim corrupti consectetur illum impedit magni! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Non exercitationem nostrum molestiae harum accusamus labore illum ab,
+                praesentium similique voluptas.</p>
+        </div>
+        <div class="card" id="card5">
+            <h1 id="h5">This is Programming course.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum incidunt fugit veritatis
+                doloremque. Quae enim corrupti consectetur illum impedit magni! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Non exercitationem nostrum molestiae harum accusamus labore illum ab,
+                praesentium similique voluptas.</p>
+        </div>
+        <div class="card" id="card6">
+            <h1 id="h6">This is Life course.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum incidunt fugit veritatis
+                doloremque. Quae enim corrupti consectetur illum impedit magni! Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Non exercitationem nostrum molestiae harum accusamus labore illum ab,
+                praesentium similique voluptas.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

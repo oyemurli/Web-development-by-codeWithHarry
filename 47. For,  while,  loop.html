@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For, Loop, While Loop</title>
+    <style>
+        .conntainer{
+
+        }
+        .heading{
+
+        }
+        h1{
+            background-color: aqua;
+            padding: 50px;
+            text-align: center;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>
+                This is about loops
+            </h1>
+        </div>
+    </div>
+    <script>
+        // console.log("This is about loops.");
+        // let i = 5;
+        // for (i = 5; i < 10; i++) {
+            // console.log(i)
+        // }
+
+        // yaha pe kya hota hai ki ham kah sakte hai ki agar jab
+        // tak ye nhi ho jata tab tak isse chalate raho to vo chalata rahta hai 
+        // to yaha pe ek array banaya hai jisme 5 strings hai uske baad ek for loop 
+        //} lagaya jisme bola gya hai ki index = 0 hai aur agar friends.length index
+        // se chhota hai to print kar do pahli string ab aage hai ki index++ iska 
+        // index me 1 jod do to ab dobara se loop chalega to ab index = 1 ho gya aur 
+        // friends.length se chhota hi hai  kyonki friends me 4 strings hai to dusra 
+        // vala print ho jayega aur jab tak charo strings print nhi ho jaati tab ye 
+        // chalta rahega.
+
+        // let friends = ["Aman", "Murli", "Motivation", "Comedy"]
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log("Hello ji!!", friends[index]);
+
+        // }
+
+        // ye for each hai matlab har ek ke liye chalega agar array me 10 element hai to 
+        // 10 baar ek ek karke chalega. jaise friends me 4 elements hai to friends.foreach 
+        // karke chalaya jaa sakta hai.
+
+        // friends.forEach(function f(element){
+        //     console.log("hello dear!!, " + element)
+        // });
+
+        // ye aur simple hai kaam vhi karega for each ke jaise hi but syntax is very simple
+        // for aur ab bata do ki kiske liye chalana hai agar friends ke liye chalana hai to
+        // elements of friends aur ye har ek elements ke liye ek ek karke chal jayega.
+
+        // for (element of friends){
+        //     console.log("Hello Friends, " + element)
+        // }
+
+            let boss = { 
+                name: "Aman",
+                companyname: "Apna product pvt ltd.",
+                age: 17,
+        };
+        
+        for(key in boss){
+            console.log(`The ${key} of boss is ${boss[key]}`);
+        };
+
+        // let a = 0;
+        // while (a < 10) {
+        //     console.log(`${a} is less than 10`)
+        //     a++;
+        // }
+
+        // let j = 30;
+        // do{
+        //     console.log(`${j} is less than 4. We are inside while loop.`)
+        //     j++
+        // }while(j<4);
+        let aman = 10000000000000000 ++ 1000000000000
+    </script>
+</body>
+
+</html>

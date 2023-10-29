@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and properties</title>
+    <style>
+        :root{
+            --shadow-color:pink;
+            --Bg-color:aqua;
+            --container-color:greenyellow;
+            --maxw:900px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: var(--Bg-color);
+            border: 2px solid black;
+            margin: 4px 10px;
+            box-shadow: 5px 5px var(--shadow-color);
+        }
+        .container{
+            max-width: var(--maxw);
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            background: var(--container-color);
+            display: flex;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

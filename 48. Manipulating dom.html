@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating dom</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* border: 2px solid red; */
+        }
+        #items{
+            /* border: 2px solid black; */
+            
+        }
+        #initem{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* text-align: center; */
+            background-color: aqua;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="items initem">AMAN</div>
+        <!-- <div class="items initem">AMAN</div> -->
+        <div id="items">
+            <div class="initem">
+                <div class="navbar">home</div>
+                <div class="navbar">product</div>
+                <div class="navbar">services</div>
+                <div class="navbar">about us</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    let container = document.getElementById('container')
+    console.log(container)
+
+    let items = document.getElementById('items')
+    console.log(items)
+    
+    let navbar = document.getElementsByClassName('navbar')
+    console.log(navbar)
+
+    let initem = document.getElementsByClassName('initem')
+    console.log(initem)
+
+    let sel = document.querySelector('.navbar')
+    console.log("Selector returns", sel)
+
+    let selall = document.querySelectorAll('.initem>div')
+    console.log("Selector returns", selall)
+
+</script>
+
+</html>

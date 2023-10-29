@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating layouts</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer'
+            ;
+        }
+
+        .item {
+            background-color: rgb(47, 255, 238);
+            border: 3px solid black;
+            padding: 12px 23px;
+            text-align:center;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+        @media(max-width:500px){
+            aside{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item" id="navbar">Home About Contact Services</div>
+        <div id="section" class="item">
+            <h1 class="item">Dropshipping course</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit adipisci totam velit optio recusandae minus
+            temporibus error ullam incidunt, dolorem magni, accusamus exercitationem dolores fugit praesentium soluta
+            pariatur nam delectus ex deleniti eum assumenda, architecto id in. Odio, earum impedit! Recusandae sunt sit
+            hic exercitationem consequatur soluta voluptates aperiam ipsum! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Sequi odit eos dignissimos pariatur architecto reprehenderit quia molestiae rerum velit
+            accusantium harum quisquam non ad ex nam magni in eius, cum placeat dolor, hic labore! Suscipit perspiciatis
+            incidunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, perspiciatis officia. Ipsa nulla animi eligendi. Vel quidem, iure mollitia delectus aliquam perspiciatis neque. Exercitationem inventore quisquam impedit alias numquam ipsam ad quas rem! Porro unde quisquam dolor eveniet delectus officiis ex maiores voluptatem, non est debitis, quos minus? Quod, atque. Autem nam quas reprehenderit expedita maxime atque voluptates veritatis exercitationem iusto accusantium dolorem ullam, sed tenetur assumenda quidem veniam repellendus, nobis omnis nisi inventore eos? Quod quo odit provident quis illo a laborum earum sint corrupti quasi esse veritatis molestiae in recusandae quidem adipisci non sit pariatur architecto nihil magni cupiditate alias, iure ducimus? Necessitatibus, aliquam? Unde soluta et aperiam illum corporis rem, ad officiis natus! Consequuntur totam voluptatem harum minima fuga iusto officiis, illo itaque quas id pariatur et labore vitae impedit maiores nostrum? Deleniti voluptatem delectus maxime mollitia, nisi inventore quas? Dolore, repellendus consequatur quasi reprehenderit aliquid, unde impedit error quas nihil, hic cum doloribus nobis dolor eius. Eum aliquam tenetur, non iste neque voluptate, ipsum iusto est nesciunt repellendus maiores aspernatur eaque exercitationem alias explicabo magni dicta ea in perspiciatis magnam! Nesciunt natus nobis iste sunt repellendus, consequuntur amet sit doloremque tempore quisquam perspiciatis numquam ipsam eos asperiores assumenda est soluta molestias distinctio ea, fugit aliquid dolorem et explicabo! Sit, natus, neque deleniti accusantium odio qui itaque labore blanditiis expedita, commodi ipsum fugiat ut inventore amet enim. Harum illum, necessitatibus incidunt exercitationem id voluptatibus a quasi laborum nam quaerat numquam porro, magni temporibus? Totam officiis unde, necessitatibus voluptate eius sed numquam, quas saepe eaque ducimus fuga odio corporis minus at inventore aut amet id soluta. Quis ducimus dolores ab itaque quae quam adipisci nemo, laborum natus laboriosam ullam placeat quo iste debitis repellendus, quia doloribus, inventore aut quod quas delectus. Eum deserunt amet possimus? Quibusdam omnis doloremque molestias architecto animi voluptate quis accusantium sit, facilis accusamus amet. Provident tenetur, unde corporis quia soluta eius eligendi non qui commodi nisi, dignissimos mollitia inventore quaerat necessitatibus voluptates sapiente officiis earum quidem. Itaque, at velit. Obcaecati similique ratione distinctio quia natus tempora a officia corporis at unde perspiciatis reiciendis omnis dicta excepturi culpa maiores dolorem molestias, eum nam commodi? Perferendis, similique suscipit earum provident fugiat quis aperiam nulla culpa porro quasi dolores nemo repellat laborum explicabo iusto recusandae! Totam harum odio optio nemo cum et quibusdam, quod ad nostrum! Repellat similique minus maxime unde quidem, fuga eius dolore placeat neque.porro cupiditate nulla neque, non, dolorum, voluptatum aliquam ad reiciendis ab quam optio!
+        </div>
+        <div id="aside" class="item">
+            <h3 class="item">More about dropshipping</h3>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eum incidunt facere. Veniam explicabo
+            cumque nemo. Nesciunt perspiciatis labore hic tempore error ex ea, sed harum asperiores eaque, illo itaque
+        </div>
+        <footer class="item"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dignissimos quas sed voluptas a rem sint! 
+        </footer>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    </div>
+</body>
+
+</html>

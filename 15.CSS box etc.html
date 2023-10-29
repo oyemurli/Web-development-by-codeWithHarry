@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS box</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: cornflowerblue;
+        }
+
+        .container {
+            background-color: cornflowerblue;
+            border: 5px solid red;
+            /* 
+        padding-top: 50px;
+        padding-right:50px;
+        padding-left:50px;
+        padding-down:50px;
+        */
+
+            /* padding: top right bottom left; */
+            /* padding: y(tob/right) x(bottom/left); */
+            padding: 20px 20px;
+            /* padding: 20px 20px 20px 20px; */
+
+            /* margin-top: 50px; */
+            /* margin-right: 100px; */
+            /* margin-left:100px */
+            /* margin-down:50px;  */
+
+            /* margin: top right bottom left; */
+            /* margin: y(top/right) x(bottom/left); */
+            /* margin: 20px 20px 20px 20px; */
+            margin: 40px 30px;
+            border-radius: 30px;
+            width: 490px;
+            .footer {
+                border: 2px solid red;
+                position: sticky;
+                bottom: 0px;
+            }
+            .footer-nav{
+                border: 2px solid black;
+                display: flex;
+            }
+            .items{
+                border: 2px solid green;
+                margin: 10px 16px;
+                padding: 10px 14px;
+            }
+            box-sizing: border-box;
+        }
+
+        p {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 30px;
+            width: 350px;
+            box-sizing: border-box;
+            color: black;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quos maxime minus totam
+            repellendus veritatis deserunt, incidunt blanditiis corrupti non consequuntur voluptate esse natus quasi
+            reiciendis vel magnam sed cumque ut cupiditate eos veniam magni ullam labore. Distinctio possimus saepe
+            aliquid, sequi necessitatibus cum est culpa sit quae deleniti alias!</p>
+    </div>
+
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quos maxime minus totam
+            repellendus veritatis deserunt, incidunt blanditiis corrupti non consequuntur voluptate esse natus quasi
+            reiciendis vel magnam sed cumque ut cupiditate eos veniam magni ullam labore. Distinctio possimus saepe
+            aliquid, sequi necessitatibus cum est culpa sit quae deleniti alias!</p>
+    </div>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quos maxime minus totam
+            repellendus veritatis deserunt, incidunt blanditiis corrupti non consequuntur voluptate esse natus quasi
+            reiciendis vel magnam sed cumque ut cupiditate eos veniam magni ullam labore. Distinctio possimus saepe
+            aliquid, sequi necessitatibus cum est culpa sit quae deleniti alias!</p>
+    </div>
+
+</body>
+
+</html>

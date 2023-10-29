@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quries in css</title>
+    <style>
+        .container {
+            display: grid;
+            border: 3px solid black;
+            padding: 10px 20px;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+        }
+
+        .item1 {
+            display: grid;
+            grid-gap: 2px;
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .item2 {
+            display: grid;
+            grid-gap: 2px;
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .item3 {
+            display: grid;
+            grid-gap: 2px;
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .item4 {
+            display: grid;
+            grid-gap: 2px;
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .item5 {
+            padding: 10px 20px;
+            /* display: inline-block; */
+        }
+
+
+        @media(min-width: 100px) and (max-width: 800px) {
+            #navbar {
+                color: black;
+                background-color: greenyellow;
+            }
+        }
+
+        @media (min-width: 100px) and (max-width: 800px) {
+            #aside {
+                display: grid;
+            }
+
+            .container {
+                display: grid;
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer'
+            }
+        }
+
+        @media (max-width: 500px) {
+            #footer {
+                font-size: small;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1" id="navbar">
+            Home Product&Services AboutUs Support
+        </div>
+        <div class="item2" id="section">
+            <h1>Smartea</h1>
+            <p>Lorem, ipsum dolor sit Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore distinctio
+                dignissimos laborum, temporibus voluptate debitis saepe impedit, non facere eos incidunt. Possimus
+                libero quo, officia corrupti vitae quasi quiga explicabo?</p>
+        </div>
+        <div class="item3" id="aside">
+            <h1>Buy now
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur ullam, cupiditate neque
+                perferendis a repudiandae soluta minima nemo reiciendis numquam hic beatae dicta at qui, corrupti
+                adipisci, sit vero nobis quae possimus nulla. Repellendus odit accusamus minus laudantium nulla
+                natus voluptate facilis at? Sunt iure tempore consequuntur porro atque!</p>
+        </div>
+        <div class="item4" id="aside">
+            <h1>More about Product & Company
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro consequatur ullam, cupiditate neque
+                perferendis a repudiandae soluta minima nemo reiciendis numquam hic beatae dicta at qui, corrupti
+                adipisci, sit vero nobis quae possimus nulla. Repellendus odit accusamus minus laudantium nulla
+                natus voluptate facilis at? Sunt iure tempore consequuntur porro atque!</p>
+        </div>
+        <hr>
+        <div class="item5" id="footer">
+            <footer>© 2023 APNA PRODUCT Free e-Commerce Website Builder Software - All Rights Reserved
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

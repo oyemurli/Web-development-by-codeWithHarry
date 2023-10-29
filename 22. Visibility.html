@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty</title>
+    <style>
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            background-color: rgb(0, 255, 0);
+            position: relative;
+            top: 50px;
+            z-index: 25;
+        }
+
+        #box2 {
+            /* visibility hide the element and show thr space. */
+            /* visibility: hidden; */
+            /* display hide the element do not show the space  */
+            /* display: none; */
+            background-color: rgb(255, 255, 0);
+            position: relative;
+            top: -30px;
+            /* Which z-index is big value so box is in top. */
+            z-index: 30;  
+        }
+
+        #box3 {
+            Background-color: rgb(0, 213, 255);
+        }
+
+        #box4 {
+            background-color: rgb(238, 4, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

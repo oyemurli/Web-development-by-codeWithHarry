@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container1 {
+            border: 2px solid rgb(202, 129, 129);
+            text-align: center;
+            padding: 10px 10px;
+            margin: 10px 10px;
+            box-shadow: 0px 0px 300px rgb(0, 255, 149);
+            height: 1035px;
+            align-items: center;
+        }
+
+        .navbaar {
+            border-radius: 30px;
+        }
+
+        .navbaar ul {
+            overflow: auto;
+        }
+
+        .navbaar li {
+            float: left;
+            list-style: none;
+            margin: 35px 30px;
+        }
+
+        .navbaar li a {
+            padding: 10px 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 30px;
+        }
+
+        .navbaar li a:hover {
+            color: red;
+        }
+
+        .search {
+            margin: 35px 30px;
+            float: right;
+            padding: 10px 7px;
+            margin-right: 90px;
+            font-size: 30px;
+        }
+
+        .navbaar input {
+            border-color: 2px solid black;
+            border-radius: 30px;
+            padding: px 17px;
+            width: 150px;
+        }
+
+        h3 {
+            display: inline;
+            border: 2px solid #000;
+            border-radius: 40px;
+            background-color: rgb(248, 185, 185);
+        }
+
+        .btn1 {
+            margin-right: 10px;
+            padding: 2px 2px;
+        }
+
+        .btn2 {
+            margin-left: 10px;
+            padding: 2px 2px;
+
+        }
+
+        @media(min-width:50px) and (max-width:500px) {
+            .search {
+                display: none;
+            }
+
+            h3 {
+                display: block;
+            }
+
+            .btn2 {
+                margin-right: 10px;
+                padding: 2px 2px;
+            }
+
+            .btn1 {
+                margin-left: 10px;
+                padding: 2px 2px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <header>
+            <nav class="navbaar">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Products</a></li>
+                    <li> <a href="#">About</a></li>
+                    <li> <a href="#">Contact us</a></li>
+                    <div class="search">Search:
+                        <input type="text" name="Search
+                       " id="Search">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="container2">
+            <h1>👋 Hello there! Do you want a your own website for your bussiness.</h1>
+            <br>
+            <h3 class="btn1">Yes, I want a beautiful website.</h3>
+            <h3 class="btn2">No, I do not want any website.</h3>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi incidunt error quam ea quibusdam id
+                reiciendis illum odio vero totam.</p>
+        </div>
+    </div>
+    <footer>© 2023 APNA PRODUCT Free e-Commerce Website Builder Software - All Rights Reserved.</footer>
+    <script>
+        var string = 'This is '
+        var name = 'Aman'
+        var messege = "'s pen"
+        console.log(string + name + messege); 
+
+        var temp = `${name} has a company of \n$100 and ${name} is bad boy`
+        console.log(temp)
+        console.log(temp.length)
+        len = name.length
+        console.log(len)
+
+    </script>
+</body>
+
+</html>
